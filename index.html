@@ -41,9 +41,9 @@
             <img src="img/logo.svg" alt="Logo da AluraBooks" class="container__imagem">
         </div>
         <div class="container">
-        <a href="#"><img src="img/favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-        <a href="#"><img src="img/compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-        <a href="#"><img src="img/usuário.svg" alt="Meu Pefil" class="container__imagem"></a>
+            <a href="#"><img src="img/favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/usuário.svg" alt="Meu Pefil" class="container__imagem"></a>
         </div>
     </header>    
     <section class="banner">
@@ -56,26 +56,38 @@
         <!-- Slider main container -->
     <div class="swiper">
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
-    </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
-  
+   
+<div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro de Liderança"></div>
+      <div class="swiper-slide"><img src="img/Gestão.svg" alt="Livro de Gestão"></div>
+      <div class="swiper-slide"><img src="img/Gestão2.svg"alt="Livro de Gestão2"></div>
+      <div class="swiper-slide"><img src="img/UX.svg" alt="Livro de UX"></div>
+      <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="Livro de Métricas"></div>
+      <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro de Front-End"></div>
+      ...
+    </div>
+
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }           
+});
+    </script>
 </body>
 
 
